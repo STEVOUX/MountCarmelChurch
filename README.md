@@ -442,6 +442,11 @@
           title: "Sunday Catechism – First Semester Exam",
           body: "This year's first semester exam of Sunday Catechism will be conducted on October 5th.",
           author: "Parish Office",
+          ts: Date.now()},
+          id: crypto.randomUUID ? crypto.randomUUID() : String(Date.now()),
+          title: "New Vicar Takes Charge",
+          body: "Our new parish vicar, Rev. Fr. Francis Marpapa, has officially taken seat. Let us welcome him with prayers.",
+          author: "Parish Office",
           ts: Date.now()
         });
         localStorage.setItem(NEWS_KEY, JSON.stringify(items));
